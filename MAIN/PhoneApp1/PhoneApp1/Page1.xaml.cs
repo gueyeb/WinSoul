@@ -16,10 +16,10 @@ namespace PhoneApp1
         {
             InitializeComponent();
         }
-
-        private void Go_Click(object sender, RoutedEventArgs e)
+        
+        public void Go_Click(object sender, RoutedEventArgs e)
         {
-            string site = URL.Text;
+            string site = "https://www.epitech.eu/intra";
             MiniBrowser.Navigate(new Uri(site, UriKind.Absolute));
         }
     }

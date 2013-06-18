@@ -61,16 +61,22 @@
                     <CompositeTransform SkewX="-3.773" TranslateX="-1.887"/>
                 </TextBlock.RenderTransform>
             </TextBlock>
-            <TextBlock Text="connexion" Margin="85,-7,90,0" Style="{StaticResource PhoneTextTitle1Style}" Height="90" FontFamily="Browallia New" HorizontalAlignment="Center" Foreground="#FF68217A" Width="215"/>
+            <TextBlock Text="connexion" Margin="115,-7,129,0" Style="{StaticResource PhoneTextTitle1Style}" FontFamily="Browallia New" HorizontalAlignment="Center" Foreground="#FF68217A" Height="102" Width="224"/>
         </StackPanel>
 
         <Grid x:Name="ContentPanel" Grid.ColumnSpan="4" Grid.RowSpan="7" Grid.Row="1" Margin="0,0,0,79">
-            <Button x:Name="Go" Content="Sign up !" HorizontalAlignment="Center" Margin="234,150,102,0" VerticalAlignment="Top" Click="Go_Click" RenderTransformOrigin="1.434,0.472" Width="144"/>
+            <Button x:Name="Go" Content="Sign up !" HorizontalAlignment="Center" Margin="15,152,321,0" VerticalAlignment="Top" Click="Go_Click" RenderTransformOrigin="1.434,0.472" Width="144"/>
             <TextBox x:Name="Login" MaxLength="8" HorizontalAlignment="Left" Margin="15,10,0,0" Text="Login" VerticalAlignment="Top" Width="440"/>
-            <TextBlock x:Name="aff_log" HorizontalAlignment="Left" Margin="30,222,0,0" Text="Login" VerticalAlignment="Top" Width="440"/>
-            <TextBlock x:Name="aff_mdp" HorizontalAlignment="Left" Margin="30,249,0,0" Text="Mdp" VerticalAlignment="Top" Width="440"/>
+            <TextBlock x:Name="aff_log" HorizontalAlignment="Left" Margin="30,250,0,0" Text="Login" VerticalAlignment="Top" Width="440"/>
+            <TextBlock x:Name="aff_mdp" HorizontalAlignment="Left" Margin="30,280,0,0" Text="Mdp" VerticalAlignment="Top" Width="440"/>
             <PasswordBox x:Name="Mdp" MaxLength="8" HorizontalAlignment="Left" Margin="15,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,2.0" Height="70" Width="440"/>
-            <Button x:Name="Intra" Content="Intra" HorizontalAlignment="center" Margin="0,150,129,0" VerticalAlignment="Top" Click="Intra_Click_1"/>
+            <Button x:Name="Intra" Content="Intra" HorizontalAlignment="center" Margin="164,152,217,0" VerticalAlignment="Top" Click="Intra_Click_1">
+            	<i:Interaction.Triggers>
+            		<i:EventTrigger EventName="Click">
+            			<ec:NavigateToPageAction x:Name="page" TargetPage="/Page1.xaml"/>
+		       		</i:EventTrigger>
+            	</i:Interaction.Triggers>
+            </Button>
         </Grid>
         <Image Margin="55,200,70,10" Source="windows-phone-8-logo-new.png" Stretch="Uniform" Grid.Row="7" Grid.Column="1"/>
     </Grid>

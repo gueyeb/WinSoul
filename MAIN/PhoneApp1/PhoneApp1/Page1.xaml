@@ -14,9 +14,7 @@
     shell:SystemTray.IsVisible="True">
 		
 		<Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBox x:Name="URL" Margin="10,10,85,0" Text="http://www.xbox.com" VerticalAlignment="Top"/>
-            <Button x:Name="Go" Content="Go" HorizontalAlignment="Right" Margin="0,10,6,0" VerticalAlignment="Top" Click="Go_Click"/>
-            <phone:WebBrowser x:Name="MiniBrowser" Margin="10,82,0,0"/>
+            <phone:WebBrowser x:Name="MiniBrowser" Margin="10,0,0,0" Source="https://epitech.eu/intra"/>
         </Grid>
 
     <!--LayoutRoot est la grille racine où tout le contenu de la page est placé-->
